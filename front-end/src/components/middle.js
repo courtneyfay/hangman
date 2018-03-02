@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './middle.css';
+import Guesses from './guesses';
+import WordToGuess from './wordtoguess';
+
 
 class Middle extends Component {
-	// constructor(props){
-	// 	super(props)
-	// }
 
 	render(){
+		const { action, guess_result, wrong_guesses, word_so_far, actual_word } = this.props
+
 		return(
 			<div className="middle-section">
-				<p>I am at the middle</p>
+				<Guesses />
+				<WordToGuess word_so_far={word_so_far} actual_word={actual_word} />
 			</div>
 		)
 		

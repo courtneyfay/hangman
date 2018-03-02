@@ -3,15 +3,15 @@ import './App.css';
 import Header from './components/header';
 import Middle from './components/middle';
 import Bottom from './components/bottom';
-import requestAPI from './Api'
+import requestAPI from './Api';
 
 class App extends Component {
-	constructor(props) {
+	constructor(props){
 		super(props)
 		this.state = {}
 	}
-	
-	componentDidMount() {
+
+	componentWillMount() {
 		requestAPI("game", "GET")
 			.then(results => {
 				this.setState({
@@ -28,10 +28,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      	<p>{this.state.action}</p>
-      	<p>{this.state.word_so_far}</p>
         <Header />
-        <Middle />
+        <Middle action={this.state.action} guess_result={this.state.guess_result} wrong_guesses={this.state.wrong_guesses} word_so_far={this.state.word_so_far} actual_word={this.state.actual_word}/>
         <Bottom />
       </div>
     );

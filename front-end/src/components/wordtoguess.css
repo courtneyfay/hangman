@@ -1,0 +1,8 @@
+.letter-of-word {
+	display: inline;
+	margin: 1em;
+}
+
+.word-to-guess {
+	float: right;
+}
