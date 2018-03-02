@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './wordtoguess.css';
 
 class WordToGuess extends Component {
-	constructor(props){
-		super(props)
-	}
-
 	render(){
 		const { word_so_far, actual_word } = this.props
 		

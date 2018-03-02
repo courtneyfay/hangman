@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './guesses.css';
 
 class Guesses extends Component {
-	constructor(props){
-		super(props)
-	}
-
 	render(){
 		const { guess_result, guesses_left } = this.props
 

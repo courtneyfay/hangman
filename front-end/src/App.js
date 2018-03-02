@@ -31,7 +31,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Middle action={this.state.action} guess_result={this.state.guess_result} wrong_guesses={this.state.wrong_guesses} word_so_far={this.state.word_so_far} actual_word={this.state.actual_word} guesses_left={this.state.guesses_left} />
-        <Bottom />
+        <Bottom action={this.state.action} guess_result={this.state.guess_result} wrong_guesses={this.state.wrong_guesses} word_so_far={this.state.word_so_far} actual_word={this.state.actual_word} guesses_left={this.state.guesses_left} />
       </div>
     );
   }
