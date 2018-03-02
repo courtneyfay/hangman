@@ -12,7 +12,7 @@ class Bottom extends Component {
 			<div className="bottom-section">
 				{
 					{actual_word} ?
-						<Keyboard /> 
+						<Keyboard wrong_guesses={wrong_guesses} word_so_far={word_so_far}/> 
 						: 
 						<EndGameMessage />
 				}

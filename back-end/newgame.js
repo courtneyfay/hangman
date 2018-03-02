@@ -10,11 +10,7 @@ let newGame = (req, res) => {
 	request(options, (error, response, body) => {
 		if (!error && response.statusCode === 200) {
 			let result = res.json(JSON.parse(body))
-			// console.log("response")
-			// console.log(response)
-			// console.log("error")
-			// console.log(error)
-			console.log(body)
+			// console.log(body)
 			return result
 		}
 		return response.statusCode || 500
