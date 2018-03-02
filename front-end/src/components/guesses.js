@@ -7,9 +7,12 @@ class Guesses extends Component {
 	}
 
 	render(){
+		const { guess_result, guesses_left } = this.props
+
 		return(
 			<div className="guesses">
-				<p>I am the Guesses div</p>
+				<p className="number-of-guesses">{this.props.guesses_left}</p>
+				<p>Guesses Left!</p>
 			</div>
 		)
 	}

@@ -1,6 +1,6 @@
 .letter-of-word {
 	display: inline;
-	margin: 1em;
+	margin: 0 1em;
 }
 
 .word-to-guess {
